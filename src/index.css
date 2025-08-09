@@ -4,7 +4,10 @@
   --font-primary: "Inter", "sans-serif";
   --font-secondary: "Poppins", "sans-serif";
 
-
+  --breakpoint-xl: 1440px;
+  --breakpoint-lg: 1200px;
+  --breakpoint-md: 768px;
+  --breakpoint-sm: 375px;
   
   --color-primary: #4F46E5;
   --color-secondary: #F28D35;

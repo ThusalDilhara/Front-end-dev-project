@@ -11,18 +11,22 @@ const navbar = () => {
 
   return (
     
-    <header className="top-0 z-50 bg-primary shadow-md">
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-       
-        <img src="Logo.png" alt="logo" width={226} height={50}  />
-
+     <header className="top-0 z-50 bg-primary shadow-md">
+      <div className="max-w-[1440px] mx-auto px-4 py-4 flex items-center justify-between">
         
-        <nav className="hidden md:flex space-x-6 text-[14px] font-medium">
-          <a href="#" className="uppercase  hover:text-accent transition-colors duration-200">Services</a>
-          <a href="#" className="uppercase  hover:text-accent transition-colors duration-200">About Us</a>
-          <a href="#" className="uppercase  hover:text-accent transition-colors duration-200">Contact Us</a>
-          <a href="#" className="uppercase  hover:text-accent transition-colors duration-200">Careers</a>
+        <img
+          src="Logo.png"
+          alt="logo"
+          className="w-[180px] h-auto md:w-[200px] lg:w-[226px]"
+        />
+
+        <nav className="hidden md:flex space-x-4 lg:space-x-6 text-[12px] lg:text-[14px] font-medium">
+          <a href="#" className="uppercase hover:text-accent transition-colors">Services</a>
+          <a href="#" className="uppercase hover:text-accent transition-colors">About Us</a>
+          <a href="#" className="uppercase hover:text-accent transition-colors">Contact Us</a>
+          <a href="#" className="uppercase hover:text-accent transition-colors">Careers</a>
         </nav>
+
         
 
         {/* Mobile Navigation - Hamburger menu icon */}
