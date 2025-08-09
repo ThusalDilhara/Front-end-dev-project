@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className='min-h-screen bg-gray-100'>
+      <div className='max-h-screen bg-gray-100 mb-16'>
         <Hero/>
       </div>
       <Footer/>
