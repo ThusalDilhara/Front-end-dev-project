@@ -10,7 +10,7 @@ const block = ({ title, description, imageSrc, imageAlt, reverse = false }) => {
         <img
           src={imageSrc}
           alt={imageAlt}
-          className="rounded-lg shadow-xl"
+          
         />
       </div>
       
