@@ -3,7 +3,7 @@ import React from 'react'
 const navbar = () => {
   return (
     //navbar component
-    <header className="sticky top-0 z-50 bg-[#4F46E5] text-white shadow-md">
+    <header className="top-0 z-50 bg-[#4F46E5] text-white shadow-md">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
        
         <img src="Logo.png" alt="logo" width={226} height={50}  />
