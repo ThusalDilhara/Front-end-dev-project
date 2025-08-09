@@ -4,26 +4,33 @@ const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="py-4">
+    <div className="bg-[#FAF8FF] p-6 mb-3 rounded-[7px]">
+  
       <div
         className="flex items-center justify-between cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
       >
-        {/* Question text */}
-        <h3 className="text-lg font-semibold text-[#4C35D5]">{question}</h3>
-        {/* Icon based on state */}
-        <span className="text-2xl text-gray-500">
-          {isOpen ? '-' : '+'}
+        <h3
+          className={`text-lg font-[500] transition-colors duration-300 ${
+            isOpen ? "text-[#4F46E5]" : "text-[#000000]"
+          }`}
+        >
+          {question}
+        </h3>
+        <span className="text-2xl text-gray-500 transition-transform duration-300">
+          {isOpen ? "-" : "+"}
         </span>
       </div>
-      {/* Answer content, conditionally rendered */}
-      {isOpen && (
-        <p className="mt-4 text-gray-600">
-          {answer}
-        </p>
-      )}
+
+      
+      <div
+        className={`overflow-hidden transition-all duration-500 ease-in-out ${
+          isOpen ? "max-h-40 opacity-100 mt-4" : "max-h-0 opacity-0 mt-0"
+        }`}
+      >
+        <p className="text-[#6F6C90]">{answer}</p>
+      </div>
     </div>
   );
 };
-
 export default FAQItem;
