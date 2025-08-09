@@ -5,7 +5,7 @@ const footer = () => {
     <footer className="bg-[#4F46E5] text-white py-12">
       <div className="container mx-auto px-4">
         
-        <div className="grid grid-cols-1 md:grid-cols-3 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-3  text-center md:text-left">
           {/* First Column */}
           <div>
             <img src="Logo.png" alt="logo" width={226} height={50}  />
@@ -14,7 +14,7 @@ const footer = () => {
             </p>
           </div>
           {/* Second Column */}
-          <div>
+          <div className='md:ml-[200px]'>
             <h4 className="font-bold text-lg mb-4">Our Technologies</h4>
             <ul className="space-y-2">
               <li>ReactJS</li>
@@ -24,7 +24,7 @@ const footer = () => {
             </ul>
           </div>
           {/* Third Column */}
-          <div>
+          <div className='md:ml-[150px]'>
             <h4 className="font-bold text-lg mb-4">Our Services</h4>
             <ul className="space-y-2">
               <li>Social Media Marketing</li>
