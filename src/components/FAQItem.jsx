@@ -4,7 +4,7 @@ const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="bg-[#FAF8FF] p-6 mb-3 rounded-[7px]">
+    <div className="bg-box-grey p-6 mb-3 rounded-[7px]">
   
       <div
         className="flex items-center justify-between cursor-pointer"
@@ -12,12 +12,12 @@ const FAQItem = ({ question, answer }) => {
       >
         <h3
           className={`text-lg font-[500] transition-colors duration-300 ${
-            isOpen ? "text-[#4F46E5]" : "text-[#000000]"
+            isOpen ? "text-primary" : "text-black"
           }`}
         >
           {question}
         </h3>
-        <span className="text-2xl text-gray-500 transition-transform duration-300">
+        <span className={`text-2xl  transition-transform duration-300 ${isOpen ? "text-primary" : "text-black"}`}>
           {isOpen ? "-" : "+"}
         </span>
       </div>
@@ -28,7 +28,7 @@ const FAQItem = ({ question, answer }) => {
           isOpen ? "max-h-40 opacity-100 mt-4" : "max-h-0 opacity-0 mt-0"
         }`}
       >
-        <p className="text-[#6F6C90]">{answer}</p>
+        <p className="text-text-light">{answer}</p>
       </div>
     </div>
   );

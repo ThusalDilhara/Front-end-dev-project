@@ -15,11 +15,11 @@ const block = ({ title, description, imageSrc, imageAlt, reverse = false }) => {
       </div>
       
       <div className="md:w-1/2 text-center md:text-left">
-        <h2 className="text-2xl font-bold text-[#4F46E5] mb-4">
+        <h2 className="text-2xl font-bold text-primary mb-4">
           {title}
         </h2>
   
-        <p className="text-lg text-gray-600 mb-8 font-[400]">
+        <p className="text-lg text-black mb-8 font-[400]">
           {description}
         </p>
 
