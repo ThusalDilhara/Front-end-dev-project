@@ -5,11 +5,11 @@ import HeroImage from './assets/HeroImage.png'
 const hero = () => {
   return (
     <section 
-      className="relative bg-cover bg-center h-[100vh] flex items-center" 
+      className="relative bg-cover bg-center h-auto flex items-center pb-10" 
       style={{ backgroundImage: `url(${HeroImage})`}}
     >
       <div
-        className="relative z-10 text-white rounded-lg max-w-[630px] pt-6 px-10 pb-8 ml-20 mt-[354px]"
+        className="relative z-10 text-white max-w-[630px] pt-6 px-10 pb-8 ml-20 mt-[354px]"
         style={{
           background: 'linear-gradient(90deg, #4DCA79 0%, #1CBDDD 100%)',
           opacity: 1,
