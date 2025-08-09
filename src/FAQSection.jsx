@@ -24,7 +24,7 @@ const FAQSection = () => {
         <h2 className="text-3xl md:text-[27px] font-[600] text-[#4F46E5] text-center mb-8">
           Frequently asked questions
         </h2>
-        <div className="max-w-3xl mx-auto divide-y divide-[#FAF8FF]">
+        <div className="max-w-3xl mx-auto divide-y divide-gray-300">
           {faqs.map((faq, index) => (
             <FAQItem key={index} question={faq.question} answer={faq.answer} />
           ))}

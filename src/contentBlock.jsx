@@ -21,7 +21,7 @@ const ContentBlock = () => {
 
   return (
     <section className="py-16 md:py-10">
-      <div className="container mx-auto px-4 space-y-20">
+      <div className="container mx-auto px-28 space-y-20">
         
         <Block {...webDevBlock} />
         <Block {...digitalStrategyBlock} reverse={true} />

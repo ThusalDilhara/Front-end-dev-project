@@ -4,8 +4,7 @@ const FAQItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-gray-300 py-4">
-      {/* Question row with click handler */}
+    <div className="py-4">
       <div
         className="flex items-center justify-between cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
