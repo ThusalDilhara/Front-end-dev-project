@@ -5,18 +5,17 @@ import HeroImage from "./assets/HeroImage.png";
 const Hero = () => {
   return (
     <section
-      className="relative bg-cover bg-center h-auto flex items-center p-4 md:p-8"
+      className="relative bg-cover bg-center flex flex-col lg:flex-row items-center justify-center lg:items-end lg:justify-start"
       style={{ backgroundImage: `url(${HeroImage})` }}
     >
-      <div
-        className="
-          relative z-10
-          md:max-w-[630px] w-full
-          sm:px-8 md:px-10 
-          py-6 sm:py-8
-          md:ml-16 lg:ml-20
-          mt-10 sm:mt-20 md:mt-40 lg:mt-[354px]
-        "
+
+      {/* Mobile view: image is a separate block */}
+      <div className="w-full h-auto lg:hidden">
+         <img src={HeroImage} alt="Hero Background" className="w-full h-auto" />
+      </div>
+
+       <div
+        className="relative z-10 w-full lg:max-w-2xl px-4 py-8 md:px-8 md:py-8 md:mb-10 lg:ml-20 rounded-none lg:rounded-lg lg:rounded-b-none lg:rounded-t-lg lg:mt-[354px]"
         style={{
           background: "linear-gradient(90deg, #4DCA79 0%, #1CBDDD 100%)",
         }}
