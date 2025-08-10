@@ -1,3 +1,4 @@
+// reusable FAQ item component
 import React, { useState } from 'react';
 
 const FAQItem = ({ question, answer }) => {

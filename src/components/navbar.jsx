@@ -40,8 +40,9 @@ const navbar = () => {
       </div>
 
       {/* Mobile Menu Overlay */}
-  {isMobileMenuOpen && (
-   <div className="fixed inset-0 z-40 transition-opacity duration-300 md:hidden">
+   {isMobileMenuOpen && (
+   
+    <div className="fixed inset-0 z-40 transition-opacity duration-300 md:hidden">
     <div className="fixed top-0 right-0 w-full h-full bg-white text-smoky-black shadow-lg transform transition-transform duration-300 ease-in-out">
       
       {/* Close button*/}
@@ -67,7 +68,7 @@ const navbar = () => {
         </button>
       </div>
 
-      {/* All links in one column */}
+      
       <nav className="flex flex-col p-4 space-y-8 font-medium text-lg mt-4">
         <a href="#" className="uppercase hover:text-primary transition-colors duration-200">Home</a>
         <a href="#" className="uppercase hover:text-primary transition-colors duration-200">Services</a>
@@ -76,8 +77,8 @@ const navbar = () => {
         <a href="#" className="uppercase hover:text-primary transition-colors duration-200">Careers</a>
       </nav>
     </div>
-  </div>
-)}
+   </div>
+  )}
 
     
     </header>

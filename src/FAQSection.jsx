@@ -1,3 +1,4 @@
+// FAQ section that uses FAQItem components
 
 import FAQItem  from "./components/FAQItem";
 

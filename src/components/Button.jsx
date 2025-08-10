@@ -1,4 +1,5 @@
 
+// reusable btn component
 const Button = ({ text, onClick, disabled }) => {
   return (
     <button 
