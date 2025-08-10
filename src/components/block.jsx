@@ -4,7 +4,7 @@ import Button from './Button.jsx';
 
 const block = ({ title, description, imageSrc, imageAlt, reverse = false }) => {
   return (
-    <div className={`flex flex-col md:flex-row items-center gap-16 ${reverse ? 'md:flex-row-reverse' : ''}`}>
+    <div className={`flex flex-col md:flex-row items-center gap-8 ${reverse ? 'md:flex-row-reverse' : ''}`}>
      
       <div className="md:w-1/2">
         <img

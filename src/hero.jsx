@@ -5,16 +5,16 @@ import HeroImage from "./assets/HeroImage.png";
 const Hero = () => {
   return (
     <section
-      className="relative bg-cover bg-center h-auto flex items-center"
+      className="relative bg-cover bg-center h-auto flex items-center p-4 md:p-8"
       style={{ backgroundImage: `url(${HeroImage})` }}
     >
       <div
         className="
-          relative z-10 text-white 
-          max-w-[630px] 
-          px-6 sm:px-8 md:px-10 
+          relative z-10
+          md:max-w-[630px] w-full
+          sm:px-8 md:px-10 
           py-6 sm:py-8
-          md:ml-16 lg:ml-20 
+          md:ml-16 lg:ml-20
           mt-10 sm:mt-20 md:mt-40 lg:mt-[354px]
         "
         style={{
